@@ -1,0 +1,53 @@
+{
+    "key": "group_6287a5ed5c56a",
+    "title": "Article Author Dropdown",
+    "fields": [
+        {
+            "key": "field_6287a668a5e2c",
+            "label": "Select Article Author",
+            "name": "select_article_author",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "anna_ellison": "Anna Ellison",
+                "dan_ruzich": "Dan Ruzich",
+                "keith_carlson": "Keith Carlson",
+                "marla_milano": "Marla Milano",
+                "paula_novo": "Paula Novo"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "label",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1653058039
+}

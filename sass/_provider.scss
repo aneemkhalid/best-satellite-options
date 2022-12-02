@@ -1,0 +1,31 @@
+/* Provider Single */
+
+.single-provider {
+
+    .provider-single-container {
+        background-position: right 0px top 275px;
+
+        @media screen and (max-width: $deskop-screen-container) {
+            background-position: right -60px top 275px;
+            background-size: 136px 362px;
+        }
+    }
+
+    .provider-header {
+        background-position: left 0px top 40px;
+
+        @media screen and (max-width: $deskop-screen-container) {
+            background-position: left -30px top 40px;
+        }
+
+    }
+    
+	.provider-single-container,  .provider-header{
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: $mobile-screen) {
+            background:none !important;
+        }
+    }
+
+}

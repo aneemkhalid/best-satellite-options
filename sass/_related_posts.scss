@@ -1,0 +1,32 @@
+/* Related Posts */
+.related-posts{
+    margin-bottom: 90px;
+    @media screen and (max-width: $small-tablet-screen) {
+        margin-bottom: 50px;
+    }
+    .header-container{
+        margin-bottom: 35px;
+        a{
+            color:$blue;
+            border-bottom: 1px solid $blue;
+            font-weight: bold;
+        }
+    }
+    .post-container{
+        .posts-content{
+            flex-wrap: wrap;
+            border-radius: $border-radius-20;
+            height: 100%;
+            background: $grey9;
+            h5{
+                width: 100%;
+            }
+            span{
+                font-size: $h6-font-size;
+                color: $black;
+                width: 100%;
+                align-self: flex-end;
+            }
+        }
+    }
+}

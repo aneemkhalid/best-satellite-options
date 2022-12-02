@@ -1,0 +1,173 @@
+/* Variables */
+
+//Color setting for bootstrap
+$primary: #FD3824;
+$secondary: #006ADE;
+$brand-primary:$primary;
+
+
+
+/*For Colors*/
+$orange: #EE6328;
+$transparent : transparent;
+$white: #fff;
+$black: #000000;
+$blackTransparent: rgba(0, 0, 0, 0.5);
+$black2: #333333;
+$black2Transparent: rgba(33, 33, 33, 0.46);
+$black3: #2c2c2c;
+$black4: #151515;
+$black5: #2F2F2F;
+$lightBlue: #F3FAFF;
+$blue: #0878C9;
+$blue2: #0139A4;
+$blue3: #0791ed;
+$blue4: #002772;
+$blue5: #00647E;
+$darkGrey: #979797;
+$grey: #bcbcbc;
+$grey2: #818181;
+$grey3: #e5e5e5;
+$grey4: #686868;
+$grey6: #ededed;
+$grey5: #D9D9D9;
+$grey7: #747474;
+$grey8: #C4C4C4;
+$grey9: #FCFCFC;
+$grey10: #ECECEC;
+$grey11: #B1B1B1;
+$grey12: #707070;
+$grey13: #818181;
+$brownishGrey: #5e5e5e;
+$lightGrey: #f5f5f5;
+$lightGrey2: #B4B4B4;
+$primaryGreen: #039b8e;
+$primaryGreen2: #007f73 ;
+$primaryGreen3: #097d73;
+$primaryGreenTransparent: rgba(3, 155, 142, 0.5);
+$lightGreen: #44d1a0;
+$lightGreenTransparent: rgba(68, 209, 160, 0.1);
+$lightGreen2: #41c798;
+$red: #e02020;
+$primaryBoxShadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+$secondaryBoxShadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+$inputBackground: rgba(0, 0, 0, 0.06);
+
+
+
+
+
+/*For media queries*/
+$laptop-screen: 1365px;
+$deskop-screen-container : 1200px;
+$tablet-screen : 1199px;
+$small-tablet-screen : 991px;
+$mobile-screen : 767px;
+$small-mobile-screen : 575px;
+
+// MAX WIDTH
+//$max-width: 1050px;
+
+$font-size-base:              1.0rem ; //1.125rem
+
+/*For Fonts*/
+
+$font-family-sans-serif:     'Open Sans', sans-serif;
+$headings-font-family:       'Red Hat Display', sans-serif;    
+
+
+$font-family-monospace:       'Noto Sans', sans-serif;
+$font-family-base:            $font-family-sans-serif;
+
+$body-color:  #444444;
+$headings-color: #4D4D4D;
+$link-color: $blue3;
+$nav-link-color: $black4;
+
+$line-height-base:            1.39;
+$headings-margin-bottom:      1.125rem;
+
+$p-font-size: 				  16px;
+
+$extra-small-text-font-size:    12px;
+$small-text-font-size:          14px;
+
+$h1-font-size:                44px;
+$h2-font-size:                32px;
+$h3-font-size:                26px;
+$h4-font-size:                18px;
+$h5-font-size:                16px;
+$h6-font-size:                14px;
+
+$table-font-size: 16px;
+
+$headings-font-weight: 700;
+
+$headings-line-height: 1.39;
+
+
+
+//For Buttons
+$btn-transition: none;
+
+$btn-font-family: $headings-font-family;
+$btn-font-size:  16px;
+$btn-font-size-sm: $btn-font-size;
+$btn-font-size-lg:  $btn-font-size; 
+$btn-font-weight:   700;
+
+$btn-line-height:  21px;
+$btn-line-height-lg: 21px;
+$btn-line-height-sm: 21px;   
+
+$btn-padding-y:               10.5px;
+$btn-padding-y-lg:            $btn-padding-y;
+$btn-padding-y-sm:            $btn-padding-y;
+
+$btn-padding-x:               2px;
+$btn-padding-x-lg:            $btn-padding-x;
+$btn-padding-x-sm:            $btn-padding-x;
+
+$btn-border-radius:          8px;
+$btn-border-radius-lg:       $btn-border-radius;
+$btn-border-radius-sm:       $btn-border-radius;
+
+$btn-focus-width: 0px;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+
+$btn-link-color:              $secondary;
+$btn-link-hover-color:        $secondary;
+$btn-link-hover-background:   linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+$btn-link-active-background:  linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #C2C9D1;
+$btn-link-disabled-color:     $secondary;
+
+
+$btn-disabled-opacity: 1;
+$btn-disabled-background: $grey3;
+$btn-disabled-color: rgba(0, 0, 0, 0.2);
+
+$btn-primary-gradient: linear-gradient(106.43deg, #1BB1C6 -0.29%, #1BC6B4 100%);
+$btn-primary-hover-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(106.43deg, #1BB1C6 -0.29%, #1BC6B4 100%);
+$btn-primary-select-gradient: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(106.43deg, #1BB1C6 -0.29%, #1BC6B4 100%);
+
+$border-radius-25: 25px;
+$border-radius-20: 20px;
+$border-radius-5: 5px;
+$toc-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+$zip-form-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+
+
+.underline {
+  text-decoration: underline !important;
+}
+
+@font-face {
+  font-family: 'Red Hat Display';
+  src:  url('./fonts/RedHatDisplay-Bold.woff2') format('woff2'),
+        url('./fonts/RedHatDisplay-Bold.woff') format('woff'),
+        url('./fonts/RedHatDisplay-Bold.otf') format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

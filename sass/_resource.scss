@@ -1,0 +1,105 @@
+/* Resource */
+.resource-banner{
+	background: $lightBlue;
+	
+	.resource-banner-background{
+		width:100%;
+        height:100%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+		padding-bottom: 63px;
+        @media screen and (max-width: $small-tablet-screen) {
+            background:none !important;
+			padding-bottom: 32px;
+        }
+	}
+	.resource-article{
+		&.top-featured-article{
+			background: $white;
+			padding: 48px 65px 30px;
+			box-shadow: $primaryBoxShadow;
+			@media screen and (max-width: $small-tablet-screen){
+				padding: 48px 28px 30px;
+			}
+			@media screen and (max-width: $small-mobile-screen){
+				padding: 32px 16px 8px;
+			}
+		}
+	} 
+}
+.resource-article{
+	border-radius: $border-radius-20;
+	text-decoration: none;
+	span{
+		color: $black;
+		font-size: $small-text-font-size;
+	}
+	
+}
+.all-resource-articles{
+	padding-bottom: 130px;
+	.row{
+		@media screen and (max-width: $small-tablet-screen){
+			flex-direction: column-reverse;
+		}
+	}
+	@media screen and (max-width: $tablet-screen){
+		padding-bottom: 80px;
+	}
+	.all-articles{
+		padding-right: 45px;
+		@media screen and (max-width: $tablet-screen){
+			padding-right: 0;
+        }
+		.resource-article{
+			padding:32px 24px 16px 40px;
+			background: $grey9;
+			@media screen and (max-width: $small-mobile-screen){
+				padding: 32px 16px 8px;
+			}
+		}
+	}
+	.more-articles-btn-wrap{
+		padding-right: 45px;
+		@media screen and (max-width: $tablet-screen){
+			padding-right: 0;
+        }
+		.more-articles-btn{
+			color: $orange;
+			background: $transparent;
+			border: 2px solid $orange;
+			padding: 10px 31px 8px;
+			border-radius: $border-radius-25;
+			display: inline-block;
+			transition: all ease-in-out 0.2s;
+			
+			&:hover{
+				color: $white;
+				background: $orange;
+			}
+		}
+	}
+	
+	.featured-articles{
+		position: sticky;
+		top: 10px;
+		@media screen and (max-width: $small-tablet-screen){
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.resource-article{
+			border-bottom: 1px solid $grey11;
+			border-radius:0;
+			padding: 0 12px 8px;
+			margin-bottom: 32px;
+			@media screen and (max-width: $small-tablet-screen){
+				width: 48%;
+				padding: 0 0 8px;
+			}
+			@media screen and (max-width: $small-mobile-screen){
+				width: 100%;
+			}
+		}
+	}
+}

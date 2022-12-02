@@ -1,0 +1,9 @@
+.disclaimer-block {
+    background: $lightGrey;
+    padding: 12px 17px;
+    margin-bottom: 1rem;
+    p {
+        margin-bottom: 0 !important;
+        font-size: $extra-small-text-font-size;
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "key": "group_626aa307b12d4",
+    "title": "Comparison Table - Block",
+    "fields": [
+        {
+            "key": "field_626aa31ab96d2",
+            "label": "Providers",
+            "name": "providers",
+            "type": "post_object",
+            "instructions": "Please select up to three providers.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "provider"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_626aa33cb96d3",
+            "label": "Table Columns",
+            "name": "table_columns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_626aa36ab96d4",
+                    "label": "Column Name",
+                    "name": "column_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_626aa382b96d5",
+                    "label": "Data Type",
+                    "name": "data_type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "starting_price": "Starting Price",
+                        "max_upload_speed": "Max Upload Speed",
+                        "max_download_speed": "Max Download Speed",
+                        "free_wifi_hotspots": "Free WiFi Hotspots",
+                        "connection_types": "Connection Types",
+                        "symmetrical_speeds": "Symmetrical Speeds",
+                        "data_caps": "Data Caps",
+                        "install_fee": "Installation Fee",
+                        "internet_equipment_rental_fee": "Equipment Fee",
+                        "contracts": "Contracts",
+                        "acsi_rating": "ACSI Rating",
+                        "fixed_price_guarentee": "Fixed price Guarantee",
+                        "credit_check_required": "Credit Check Required",
+                        "contract_buyouts": "Contract Buyouts",
+                        "early_termination_fee": "Early Termination Fee"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_626aa459b96d6",
+            "label": "Header Text For Logos Row",
+            "name": "header_text_for_logos_row",
+            "type": "text",
+            "instructions": "Add the header text for the logos row, if nothing is selected \"Our Picks\" will be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_626aa4b1b96d7",
+            "label": "Button Text For CTAs",
+            "name": "button_text_for_ctas",
+            "type": "text",
+            "instructions": "Add the button text for the CTAs, if nothing is selected \"View Plans\" will be used.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/comparison-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1651699635
+}

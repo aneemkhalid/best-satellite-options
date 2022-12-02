@@ -1,0 +1,223 @@
+{
+    "key": "group_627000f4df430",
+    "title": "Provider Bar - Block",
+    "fields": [
+        {
+            "key": "field_62700100c398d",
+            "label": "Provider",
+            "name": "provider",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "provider"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_62700baa1c966",
+            "label": "Data Fields",
+            "name": "data_fields",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 2,
+            "max": 2,
+            "layout": "table",
+            "button_label": "Add Data Field",
+            "sub_fields": [
+                {
+                    "key": "field_62700c371c968",
+                    "label": "Data Field Name",
+                    "name": "data_field_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62700c211c967",
+                    "label": "Data Field",
+                    "name": "data_field",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "starting_price": "Starting Price",
+                        "max_upload_speed": "Max Upload Speed",
+                        "max_download_speed": "Max Download Speed",
+                        "free_wifi_hotspots": "Free WiFi Hotspots",
+                        "connection_types": "Connection Types",
+                        "symmetrical_speeds": "Symmetrical Speeds",
+                        "data_caps": "Data Caps",
+                        "install_fee": "Installation Fee",
+                        "internet_equipment_rental_fee": "Equipment Fee",
+                        "contracts": "Contracts",
+                        "acsi_rating": "ACSI Rating",
+                        "fixed_price_guarentee": "Fixed price Guarantee",
+                        "credit_check_required": "Credit Check Required",
+                        "contract_buyouts": "Contract Buyouts",
+                        "early_termination_fee": "Early Termination Fee"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62acab025bb7b",
+            "label": "CTA or Custom Link",
+            "name": "cta_or_custom_link",
+            "type": "select",
+            "instructions": "Option to either automatically pull in the provider's CTA or use a custom link.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cta": "CTA",
+                "custom-link": "Custom Link"
+            },
+            "default_value": "cta",
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_62acab4b5bb7c",
+            "label": "Custom Link Url",
+            "name": "custom_link_url",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62acab025bb7b",
+                        "operator": "==",
+                        "value": "custom-link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62acab6c5bb7d",
+            "label": "Custom Link Text",
+            "name": "custom_link_text",
+            "type": "text",
+            "instructions": "If left blank the text will be \"Learn More\"",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62acab025bb7b",
+                        "operator": "==",
+                        "value": "custom-link"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Learn More",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_627044a33bf99",
+            "label": "Disclaimer",
+            "name": "disclaimer",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/provider-bar"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655483595
+}

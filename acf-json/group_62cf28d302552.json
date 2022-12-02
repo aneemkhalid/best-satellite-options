@@ -1,0 +1,139 @@
+{
+    "key": "group_62cf28d302552",
+    "title": "Zip Provider Table",
+    "fields": [
+        {
+            "key": "field_62cf293e1f363",
+            "label": "Zip Provider Table",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        },
+        {
+            "key": "field_62cf297874eef",
+            "label": "Table Columns",
+            "name": "table_columns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62cf298c74ef0",
+                    "label": "Column Name",
+                    "name": "column_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62cf299174ef1",
+                    "label": "Column",
+                    "name": "column",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "starting_price": "Starting Price",
+                        "max_upload_speed": "Max Upload Speed",
+                        "max_download_speed": "Max Download Speed",
+                        "free_wifi_hotspots": "Free WiFi Hotspots",
+                        "connection_types": "Connection Types",
+                        "data_caps": "Data Caps",
+                        "symmetrical_speeds": "Symmetrical Speeds",
+                        "installation_fee": "Installation Fee",
+                        "equipment_fee": "Equipment Fee",
+                        "acsi_rating": "ACSI Rating",
+                        "fixed_price_guarantee": "Fixed price Guarantee",
+                        "credit_check_required": "Credit Check Required",
+                        "contract_buyouts": "Contract Buyouts",
+                        "early_termination_fee": "Early Termination Fee",
+                        "contracts": "Contracts"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_62d7a13073ff7",
+            "label": "Disclaimer",
+            "name": "disclaimer",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/zip-provider-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1658298679
+}

@@ -1,0 +1,153 @@
+// Button Styles
+
+
+.btn {   
+    max-width: 220px;
+    width: 100%;
+}
+
+.btn-lg {
+    max-width: 280px;
+    width: 100%;
+}
+
+.btn-sm {
+    max-width: 150px;
+    width: 100%;
+}
+
+.btn-primary {
+    background: $orange;
+    border: none !important;
+    border-radius: 22px;
+    color: $white;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    font-size: $btn-font-size;
+    line-height: $btn-line-height;
+
+    &:hover {
+        opacity: .8;
+        background-color: $orange;
+    }
+    
+     &:focus {
+        opacity: .8;
+        box-shadow: none; 
+        background-color: $orange;
+    }
+
+    &:active {
+        background: $orange !important;
+    }
+    
+    &.btn.disabled, &.btn:disabled {
+       background: $btn-disabled-background;
+       color: $btn-disabled-color;
+       //border-color:transparent;
+    }
+    
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            background: $btn-primary-select-gradient;
+
+          &:focus {
+            background: $btn-primary-select-gradient;
+          }
+        }
+    }
+    
+   
+}
+
+.btn-outline-primary  {   
+    
+    &:hover {
+        background: $btn-primary-hover-gradient;
+        border-color: transparent;
+    }
+    
+     &:focus {
+        background: $btn-primary-select-gradient;
+        box-shadow: none; 
+        //border-color: transparent;
+        color: #fff;
+     }
+    
+    &.btn.disabled, &.btn:disabled {
+       background: $btn-disabled-background;
+       color: $btn-disabled-color;
+       border-color:transparent;
+    }
+    
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            background: $btn-primary-select-gradient;
+            border-color: transparent;
+
+          &:focus {
+            background: $btn-primary-select-gradient;
+            border-color: transparent;
+            color: #fff;  
+          }
+        }
+    }
+}
+
+.btn-icon {  
+    &::after {
+        content: ">";//\f178
+
+        font-size: inherit;
+        text-rendering: auto;
+        margin-left: 8px;
+    }
+}
+
+
+
+
+.btn-link {
+    color:$btn-link-color;
+    font-weight: 700;
+    
+    &:hover {
+        text-decoration: none;
+        color:$btn-link-hover-color;
+        background: $btn-link-hover-background;
+    }  
+    
+     &:focus {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+            color:$btn-link-hover-color;
+          }
+   &:active,
+        &.active {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+    }
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+            
+            
+          &:focus {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+           color:$btn-link-hover-color;
+          }
+        }
+    }
+}

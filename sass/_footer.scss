@@ -1,0 +1,118 @@
+/* Footer */
+
+footer{
+    background: linear-gradient(180deg, $blue 0%, $blue2 100%);
+
+    .footer-background {
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+        background-size: 200px;
+
+        @media screen and (max-width: $tablet-screen){
+           background-image: none !important;
+        }
+    }
+
+    h6{
+      color: $white;
+    }
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+    .listing{
+        margin-bottom: 16px;
+        padding-left:0;
+        li{
+            margin-bottom: 0.25rem;
+            a{
+                color: $white;
+                line-height: 20px;
+                font-size:14px;
+            }
+        }
+    }
+    .zip_search_form {
+
+        max-width: 160px;
+
+        svg {
+            position: absolute;
+            right: 20px;
+            top: 13px;
+            width:12px;
+            height:12px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .zip_search_input {
+            width: 100%;
+            min-width: auto;
+            max-height: 40px;
+            border-radius: 50px;
+            background:transparent;
+            border: 2px solid $white;
+            color: $white;
+            font-weight:normal;
+            font-size: 16px;
+            line-height: 18px;
+
+
+            &::placeholder {
+                color: $white;
+                font-weight:normal;
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+        }
+    }
+
+    .left{
+
+        @media screen and (max-width: $small-tablet-screen){
+           margin-top: 0;
+           max-width: 100%;
+           display:none;
+        }
+        &.mobile{
+            display: none;
+            @media screen and (max-width: $small-tablet-screen){
+                display:block;
+
+                ul{
+                    li{
+                        margin-right:15px;
+                    }
+                }
+             }
+        }
+        p{
+            font-size: 12px;
+            letter-spacing: 0.33px;
+            color: $white;
+            line-height: 1.2;
+        }
+        ul{
+            li{
+                margin-right: 20px;
+                display: inline-block;
+                a{
+                    color:$white;
+                    font-size: 12px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: $small-tablet-screen){
+        .listing{
+            li{
+                margin-bottom: 0;;
+            }
+        }
+    }
+}

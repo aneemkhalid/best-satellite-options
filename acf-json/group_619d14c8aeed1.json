@@ -1,0 +1,42 @@
+{
+    "key": "group_619d14c8aeed1",
+    "title": "Zip Search Shortcodes",
+    "fields": [
+        {
+            "key": "field_619d14d622fd1",
+            "label": "List of Shortcodes",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "contains-code",
+                "id": ""
+            },
+            "message": "<h3 style=\"font-size:18px;\">Count of Unique Providers<\/h3>\r\n<span>[provider_count]<\/span>\r\n<p>Displays a count of unique providers that serve this particular zipcode. <\/p>\r\n<h3 style=\"font-size:18px;\">City Name<\/h3>\r\n<span>[city]<\/span>\r\n<p>Displays the city name (e.g. Denver).<\/p>\r\n<h3 style=\"font-size:18px;\">State Name<\/h3>\r\n<span>[state]<\/span>\r\n<p>Displays the state name (e.g. GA).<\/p>\r\n<h3 style=\"font-size:18px;\">Location<\/h3>\r\n<span>[location]<\/span>\r\n<p>Displays the location name (e.g. Denver, CO).<\/p>\r\n<h3 style=\"font-size:18px;\">Zipcode<\/h3>\r\n<span>[zipcode]<\/span>\r\n<p>Displays the current zipcode (e.g. 80210).<\/p>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "12507"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1658435639
+}
